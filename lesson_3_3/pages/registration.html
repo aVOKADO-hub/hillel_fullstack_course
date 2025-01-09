@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lesson_2_2</title>
+    <title>lesson_3_3</title>
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
 
   <body>
@@ -15,14 +16,16 @@
         <li><a href="../index.html">Main</a></li>
         <li><a href="./articles.html">Articles</a></li>
         <li>
-          <a href="./contacts.html">Catalog</a>
+          <a href="./catalog.html">Catalog</a>
         </li>
         <li>
           <a href="./contacts.html" target="_blank">Contacts (target=_blank)</a>
         </li>
         <li><a href="./gallery.html">Gallery</a></li>
         <li><a href="./page-nav.html">Page-nav</a></li>
-        <li><a href="./registration.html">Registration</a></li>
+        <li>
+          <a class="active-nav" href="./registration.html">Registration</a>
+        </li>
       </ul>
     </nav>
     <main>
@@ -60,11 +63,15 @@
           <fieldset>
             <legend>Choose ur gender</legend>
 
-            <label for="gender">Male</label>
-            <input type="radio" />
+            <div class="gender">
+              <label for="gender">Male</label>
+              <input type="radio" />
+            </div>
 
-            <label for="gender">Female</label>
-            <input type="radio" />
+            <div class="gender">
+              <label for="gender">Female</label>
+              <input type="radio" />
+            </div>
           </fieldset>
 
           <fieldset>
