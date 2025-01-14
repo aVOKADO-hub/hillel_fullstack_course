@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lesson_6_6_table_3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        background-color: floralwhite;
+      }
+      body {
+        margin-top: 160px;
+        width: 100%;
+        background-color: floralwhite;
+      }
+      table {
+        margin: 0 auto;
+        empty-cells: show;
+        border: 2px solid black;
+        width: 404px;
+        height: 404px;
+      }
+      tr {
+        border: 4px solid black;
+      }
+      td {
+        border: 2px solid black;
+      }
+      .red {
+        background-color: red;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .black {
+        background-color: black;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .sm {
+        height: 40px;
+      }
+      .column {
+        width: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table2">
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="3"></td>
+        <td class="yellow" colspan="3"></td>
+        <td class="column" rowspan="4"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="red" colspan="4" rowspan="2"></td>
+        <td class="yellow" colspan="3"></td>
+      </tr>
+      <tr>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="sm">
+        <td class="black" colspan="2" rowspan="2"></td>
+        <td colspan="2"></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr class="sm">
+        <td class="yellow" rowspan="2"></td>
+        <td colspan="2"></td>
+        <td class="blue" colspan="3" rowspan="2"></td>
+        <td class="red" rowspan="2"></td>
+      </tr>
+      <tr class="sm">
+        <td colspan=""></td>
+        <td class="black" colspan="2"></td>
+      </tr>
+    </table>
+  </body>
+</html>

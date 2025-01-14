@@ -1,0 +1,55 @@
+main {
+  width: max(100%-40px, 1280px);
+}
+table,
+td {
+  border: 1px solid #000;
+}
+table {
+  margin: 0 auto;
+}
+td {
+  width: calc(100% / 3);
+  height: 50px;
+  text-align: center;
+}
+.table1 {
+  width: 75%;
+}
+.table2 {
+  width: 80%;
+}
+.nested-table {
+  width: 80%;
+}
+.column-cell {
+  height: 200px;
+}
+.third-cell {
+  width: 60%;
+}
+.fourth-cell {
+  width: 28%;
+}
+.row-cell {
+  height: 200px;
+}
+.table3 {
+  width: 80%;
+}
+.table3 td {
+  width: 10%;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.black {
+  background-color: black;
+}
