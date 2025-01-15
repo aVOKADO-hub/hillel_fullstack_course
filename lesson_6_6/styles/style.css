@@ -1,55 +1,75 @@
 main {
   width: max(100%-40px, 1280px);
 }
-table,
-td {
-  border: 1px solid #000;
-}
+
 table {
   margin: 0 auto;
 }
-td {
+
+:is(table, td) {
+  border: 2px solid #000;
+}
+
+:is(.table1, .table2) td {
   width: calc(100% / 3);
   height: 50px;
   text-align: center;
 }
+
 .table1 {
   width: 75%;
 }
-.table2 {
+
+:is(.table2, .nested-table) {
   width: 80%;
 }
-.nested-table {
-  width: 80%;
-}
+
 .column-cell {
   height: 200px;
 }
+
 .third-cell {
   width: 60%;
 }
+
 .fourth-cell {
   width: 28%;
 }
+
 .row-cell {
   height: 200px;
 }
+
 .table3 {
-  width: 80%;
+  border: 2px solid black;
+  width: 404px;
+  height: 404px;
 }
-.table3 td {
-  width: 10%;
+
+.table3 tr {
+  border: 4px solid black;
+}
+
+.sm {
+  height: 40px;
+}
+
+.column {
+  width: 25px;
+}
+
+.red {
+  background-color: red;
 }
 
 .yellow {
   background-color: yellow;
 }
-.red {
-  background-color: red;
-}
-.blue {
-  background-color: blue;
-}
+
 .black {
   background-color: black;
+}
+
+.blue {
+  background-color: blue;
 }
