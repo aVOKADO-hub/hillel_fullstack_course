@@ -1,0 +1,14 @@
+div {
+  border: 2px solid #ccc;
+  width: 200px;
+  font-size: 40px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.overflow-visible {
+  overflow: visible;
+}
