@@ -1,0 +1,6 @@
+div {
+  float: left;
+}
+.clear-block p {
+  clear: both;
+}

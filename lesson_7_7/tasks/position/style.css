@@ -1,0 +1,32 @@
+main {
+  position: relative;
+}
+div {
+  border: 2px solid #ccc;
+}
+.position-static {
+  position: static;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.position-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.position-sticky {
+  position: sticky;
+  top: 20px;
+}
+p {
+  font-size: 32px;
+}
