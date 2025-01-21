@@ -4,19 +4,29 @@ section {
   padding: 10px;
   height: 100px;
 }
-:is(.inner-block, .parent-block, .nested-block) {
+
+.inner-block,
+.parent-block,
+.nested-block {
   width: 200px;
 }
-:is(.inner-block, .parent-block, .nested-block) {
+
+.inner-block,
+.parent-block,
+.nested-block {
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 90%;
 }
-:is(.inner-block, .nested-block) {
+
+.inner-block,
+.nested-block {
   background-color: #ccc;
 }
+
 .inner-block {
   margin-right: 10px;
 }
+
 .semi-block {
   height: 45%;
   margin-bottom: 2.5%;
@@ -25,6 +35,7 @@ section {
 .left {
   float: left;
 }
+
 .right {
   float: right;
 }
