@@ -1,53 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lesson_4_4</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <main>
-      <div>
-        <p>
-          Застосовується до тегів p, вкладених у div, на першому рівні, вага 2
-        </p>
-      </div>
-      <section>
-        <h3 id="section-one-header">section 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-          quia.
-        </p>
-        <ul class="list">
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>section 2</h3>
-        <p>
-          Rem molestiae placeat architecto quod. Debitis velit fugit quidem est.
-        </p>
-        <ul class="list">
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-        </ul>
-      </section>
-      <section id="section-third">
-        <h3>section 3</h3>
-        <p>
-          Pariatur iusto inventore molestias laudantium velit dolorum temporibus
-          qui totam?
-        </p>
-        <ul class="list">
-          <li><a href="">link 1</a></li>
-          <li><a href="">link 2</a></li>
-          <li><a href="">link 3</a></li>
-        </ul>
-      </section>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson_13_13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Фігури та їх анімації</h1>
+
+    <div>
+    <p>Квадрат</p>
+      <svg xmlns='http://www.w3.org/2000/svg'  class="rect">
+        <rect  fill='blue'/>
+      </svg>
+  </div>
+
+  <div>
+    <p>Прямокутник</p>
+    
+      <svg xmlns='http://www.w3.org/2000/svg'  class="paralell-rect">
+        <rect  fill='green' />
+      </svg>
+  </div>
+
+  <div>
+    <p>Коло</p>
+    
+      <svg xmlns='http://www.w3.org/2000/svg' >
+        <circle cx='50' cy='50' r='50' fill='red' />
+      </svg>
+  </div>
+
+  <div>
+    <p>Еліпс</p>
+    
+      <svg xmlns='http://www.w3.org/2000/svg' >
+        <ellipse cx='75' cy='50' rx='75' ry='50' fill='purple' />
+      </svg>
+  </div>
+</body>
 </html>
