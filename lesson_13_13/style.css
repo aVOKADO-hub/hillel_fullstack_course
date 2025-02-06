@@ -1,0 +1,39 @@
+svg>*{
+    stroke-width: 5px;
+}
+
+.rect>rect,circle{
+    width:100px; 
+    height:100px;
+}
+.paralell-rect>rect,ellipse{
+    width:150px; 
+    height:100px;
+}
+
+.rect{
+    stroke:yellow;
+}
+
+.rect:hover{
+    stroke: black;
+}
+
+.paralell-rect{
+    stroke:blue;
+}
+.paralell-rect :hover{
+    stroke:red;
+}
+circle{
+    stroke: green;
+}
+circle:hover{
+    stroke: purple;
+}
+ellipse{
+    stroke:green 
+}
+ellipse:hover{
+    stroke:aqua
+}
