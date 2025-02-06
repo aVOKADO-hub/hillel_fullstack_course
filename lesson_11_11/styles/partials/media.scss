@@ -1,0 +1,70 @@
+@import './mediaMixins.scss';
+
+@include mobile {
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav {
+        padding-top: 40px;
+    }
+
+    .hero {
+        padding: 80px 0 70px 0;
+    }
+
+    .project-card {
+        width: 120px;
+    }
+
+    .projects-list {
+        gap: 25px;
+    }
+
+    iframe {
+        height: 300px;
+        width: 90%;
+    }
+
+    .about-me,
+    .projects,
+    .video {
+        padding: 100px 0;
+    }
+}
+
+
+@include tablet {
+
+    $font-size-lg: 40px;
+
+    nav ul {
+        gap: 25px;
+    }
+
+    .hero {
+        padding: 120px 0 100px 0;
+    }
+
+    .container {
+        padding: 0 $font-size-lg;
+    }
+
+    .projects-list {
+        gap: 35px;
+    }
+
+    iframe {
+        height: 400px;
+        width: 90%;
+    }
+
+    .about-me,
+    .projects,
+    .video {
+        padding: 70px 0;
+    }
+}
