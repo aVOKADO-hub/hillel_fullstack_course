@@ -1,0 +1,52 @@
+ul,
+.projects-list,
+.project-card {
+    display: flex;
+    flex-direction: row;
+}
+
+h1,
+.hero p {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.about-me,
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button,
+.project-card p,
+.footer {
+    color: $color-white;
+}
+
+.about-me,
+.projects,
+.video {
+    padding: 100px 0;
+}
+
+:is(ul a, ul a:hover) {
+    text-decoration: $text-decoration-link;
+    transition: 0.5s;
+}
+
+:is(.about-me, .video) h2 {
+    font-size: $font-size-md;
+}
+
+:is(.about-me, .video) p {
+    text-align: center;
+    width: 100%;
+    max-width: 520px;
+}
+
+:is(.about-me, .video) p {
+    margin: $fifty-pixels 0;
+}
