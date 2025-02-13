@@ -1,39 +1,63 @@
-svg>*{
-    stroke-width: 5px;
+root{
+    --milk-white:#f8f9fa
 }
 
-.rect>rect,circle{
-    width:100px; 
-    height:100px;
-}
-.paralell-rect>rect,ellipse{
-    width:150px; 
-    height:100px;
+
+.header {
+    background-color: -var(--milk-white); 
 }
 
-.rect{
-    stroke:yellow;
+.left-column {
+    background-color: #e9ecef; 
+    padding: 15px;
 }
 
-.rect:hover{
-    stroke: black;
+.main-column {
+    background-color: #ffffff;
+    padding: 15px;
 }
 
-.paralell-rect{
-    stroke:blue;
+.right-column {
+    background-color: #f0f0f0; 
+    padding: 15px;
 }
-.paralell-rect :hover{
-    stroke:red;
+
+.footer {
+    background-color:  -var(--milk-white);
 }
-circle{
-    stroke: green;
+
+
+.carousel-inner > .carousel-item > img {
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+    aspect-ratio: 3/4; 
 }
-circle:hover{
-    stroke: purple;
+
+
+@media (min-width: 992px) { 
+    .main-column {
+        width: 50%; 
+    }
+    .left-column, .right-column {
+        width: 25%; 
+    }
 }
-ellipse{
-    stroke:green 
+
+@media (max-width: 991px) and (min-width: 768px) { 
+    .left-column {
+        width: 50%; 
+    }
+    .main-column {
+        width: 50%;
+    }
+    .right-column {
+        width: 100%; 
+    }
 }
-ellipse:hover{
-    stroke:aqua
+
+@media (max-width: 767px) { 
+    .left-column, .main-column, .right-column {
+        width: 100%; 
+    }
 }
