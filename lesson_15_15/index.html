@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна Сітка Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-gray-50 py-4">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#" class="font-bold text-xl text-gray-800">Логотип</a>
+                <div class="hidden lg:flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Головна</a>
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-gray-800">
+                            Перше меню
+                        </button>
+                        <div class="absolute hidden group-hover:block mt-2 py-2 w-48 bg-white border rounded shadow-md z-10">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 1.1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 1.2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 1.3</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-gray-800">
+                            Друге меню
+                        </button>
+                        <div class="absolute hidden group-hover:block mt-2 py-2 w-48 bg-white border rounded shadow-md z-10">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 2.1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 2.2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 2.3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path v-if="!mobileMenuOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
+                            <path v-if="mobileMenuOpen" fill-rule="evenodd" d="M18.278 16.857a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 1 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-white hover:bg-gray-700">Головна</a>
+                    <div class="relative group">
+                        <button class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-white hover:bg-gray-700 w-full text-left">
+                            Перше меню
+                        </button>
+                        <div class="absolute hidden group-hover:block mt-2 py-2 w-48 bg-white border rounded shadow-md z-10 left-0">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 1.1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 1.2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 1.3</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-white hover:bg-gray-700 w-full text-left">
+                            Друге меню
+                        </button>
+                        <div class="absolute hidden group-hover:block mt-2 py-2 w-48 bg-white border rounded shadow-md z-10 left-0">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 2.1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 2.2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Пункт 2.3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="col-span-1 md:col-span-1 lg:col-span-1 bg-gray-200 p-4">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    [Image of Vertical Image 1]
+                </div>
+                <div class="carousel-item">
+                    [Image of Vertical Image 2]
+                </div>
+                <div class="carousel-item">
+                    [Image of Vertical Image 3]
+                </div>
+                <div class="carousel-item">
+                    [Image of Vertical Image 4]
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 lg:col-span-2 bg-white p-6">
+            <div class="accordion" id="accordionMain">
+                <div class="accordion-item mb-4 border rounded">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button px-4 py-2 flex items-center justify-between w-full text-left text-gray-800 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Розділ 1
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMain">
+                        <div class="accordion-body px-4 py-3">
+                            Це тіло першого елемента акордеону. Ви можете розмістити тут будь-який вміст.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-4 border rounded">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed px-4 py-2 flex items-center justify-between w-full text-left text-gray-800 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Розділ 2
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMain">
+                        <div class="accordion-body px-4 py-3">
+                            Це тіло другого елемента акордеону. Ви можете розмістити тут будь-який вміст.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border rounded">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed px-4 py-2 flex items-center justify-between w-full text-left text-gray-800 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Розділ 3
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMain">
+                        <div class="accordion-body px-4 py-3">
+                            Це тіло третього елемента акордеону. Ви можете розмістити тут будь-який вміст.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 lg:col-span-1 bg-gray-100 p-6">
+            <form class="form space-y-6">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Ім'я:</label>
+                    <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email:</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5" required>
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Телефон:</label>
+                    <input type="tel" id="phone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5">
+                </div>
+                <div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Повідомлення:</label>
+                    <textarea id="message" rows="3" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"></textarea>
+                </div>
+                <div class="flex items-center">
+                    <input id="agreement" type="checkbox" class="w-4 h-4 bg-gray-50 border border-gray-300 rounded focus:ring-indigo-500 focus:ring-2" required>
+                    <label for="agreement" class="ml-2 text-sm font-medium text-gray-900">Я погоджуюсь з умовами обробки персональних даних</label>
+                </div>
+                <div class="flex space-x-4">
+                    <button type="submit" class="py-2.5 px-5 text-sm font-medium text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300">Відправити</button>
+                    <button type="reset" class="py-2.5 px-5 text-sm font-medium text-gray-900 bg-gray-300 rounded-lg border border-gray-300 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-gray-200">Очистити</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-gray-50 text-center py-4 mt-8">
+        <p class="text-gray-600">&copy; 2024 Всі права захищені.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Проста імітація слайдера (без реальної анімації)
+        let carouselItems = document.querySelectorAll('.carousel-item');
+        let currentItem = 0;
+
+        function showItem(index) {
+            carouselItems.forEach(item => item.classList.remove('active'));
+            carouselItems[index].classList.add('active');
+        }
+
+        // Показувати перший елемент слайдера при завантаженні сторінки
+        showItem(currentItem);
+
+        // Для автоматичної зміни слайдів (опціонально)
+         setInterval(() => {
+             currentItem = (currentItem + 1) % carouselItems.length;
+             showItem(currentItem);
+         }, 5000); // Змінювати кожні 5 секунд
+    </script>
+</body>
+</html>
