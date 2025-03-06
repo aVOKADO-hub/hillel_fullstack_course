@@ -1,0 +1,19 @@
+details {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    summary {
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    img {
+      display: block;
+      margin: 10px auto;
+      max-width: 80%;
+      height: 500px;
+    }
