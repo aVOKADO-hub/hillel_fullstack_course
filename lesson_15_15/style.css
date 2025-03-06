@@ -1,0 +1,27 @@
+
+    /* Додаткові стилі, якщо потрібно. Tailwind в основному використовує утилітні класи,
+       але ви можете додати кастомні стилі тут, якщо є специфічні потреби */
+    .carousel-item {
+        display: none; /* Приховати всі елементи каруселі спочатку */
+    }
+    .carousel-item.active {
+        display: block; /* Показувати активний елемент */
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        aspect-ratio: 3/4; /* Вертикальне співвідношення сторін */
+    }
+
+    /* Стилі для акордеону (якщо потрібно більше кастомізації) */
+    .accordion-button:not(.collapsed) {
+        color: #4B5563; /* Колір тексту від Tailwind text-gray-800 */
+        background-color: #F9FAFB; /* Колір фону від Tailwind bg-gray-50 */
+        box-shadow: inset 0 0 0 0; /* Прибрати стандартну тінь Bootstrap */
+    }
+    .accordion-button:focus {
+        border-color: #6366F1; /* Колір рамки від Tailwind indigo-500 */
+        box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25); /* Тінь від Tailwind indigo-200, але трохи змінена rgba */
+    }
