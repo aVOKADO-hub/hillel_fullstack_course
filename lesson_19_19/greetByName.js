@@ -15,8 +15,9 @@
 */
 
 function greet(msg, name) {
-  return msg.concat(', ', name)
+  return `${msg || "notUndefMsg"}, ${name || "notUndefName"}`
 }
 console.log(greet('Hi', 'John')) // Hi, John
 console.log(greet('Hey', 'Bob')) // Hey, Bob
 console.log(greet('Hello', 'Mary')) // Hello, Mary
+console.log(greet('Hello')) // Hello, Mary
