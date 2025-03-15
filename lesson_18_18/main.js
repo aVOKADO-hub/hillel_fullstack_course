@@ -104,7 +104,7 @@ console.log(strObj);
 // isRamaPos
 // isRama
 var isRamaPos = strObj.str.indexOf('рама')
-var isRama = isRamaPos ? true : false;
+var isRama = isRamaPos < 0 ? false : true;
 console.log(isRamaPos, isRama)
 /*
  * #8
