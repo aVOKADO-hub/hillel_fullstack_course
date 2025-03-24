@@ -1,3 +1,4 @@
+//нотатки на уроці
 let message = 1
 try {
     message += 1
